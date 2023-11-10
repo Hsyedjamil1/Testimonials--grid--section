@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+body {
+    background-color: hsl(210, 46%, 95%);
+    min-height: 100vh;
+    padding: 5rem 1.5rem;
+}
+
+.first__section {
+    background-color: hsl(263, 55%, 52%);
+    border-radius: 0.5rem;    
+    padding: 1.7rem;
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-size: 32% 28%;
+    background-repeat: no-repeat;
+    background-position: 90% 0%;
+}
+
+.first__section__image, .second__section__image, .third__section__image, .fourth__section__image, .fifth__section__image {
+    display: flex;
+    align-items: start;
+    margin-bottom: 2rem;
+    gap: 1rem;
+}
+
+.global__border {
+    width: 2rem;
+    border-radius: 50%;
+}
+
+.Daniel__clifford {
+    border: 3px hsl(263, 39%, 61%) solid;
+}
+
+
+.first__section__image__name, .second__section__image__name, .fourth__section__image__name{
+    color: hsl(210, 46%, 95%);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.first__section__image__title, .second__section__image__title, .fourth__section__image__title {
+    color: hsl(210, 46%, 95%, 50%);
+    font-size: 0.812rem;
+    font-weight: 400;
+}
+
+.first__section__text__title, .second__section__text__title, .fourth__section__text__title {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.first__section__text__paragraph, .second__section__text__paragraph, .fourth__section__text__paragraph {
+    color: hsl(210, 46%, 95%, 50%);
+    font-size: 0.9rem;
+}
+
+/* Jonathan Walters */
+
+.second__section {
+   background-color: hsl(217, 19%, 35%);
+    border-radius: 0.5rem;
+    margin: 2rem 0;
+    padding: 1.7rem;
+}
+
+/* Jeanette Harmon */
+
+.third__section, .fifth__section {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0.5rem;
+    padding: 1.7rem;
+}
+
+.third__section__image__name, .fifth__section__image__name {
+    color: hsl(219, 29%, 14%);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.third__section__image__title, .fifth__section__image__title {
+    color: hsl(219, 29%, 14%, 50%);
+    font-size: 0.812rem;
+    font-weight: 500;
+}
+
+.third__section__text__title, .fifth__section__text__title {
+    color: hsl(219, 29%, 14%);
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.third__section__text__paragraph, .fifth__section__text__paragraph {
+    color: hsl(219, 29%, 14%, 50%);
+    font-size: 0.9rem;
+}
+
+/* Patrick Abrams */
+
+.fourth__section {
+    margin: 2rem 0;
+    background-color: hsl(219, 29%, 14%);
+    border-radius: 0.5rem;
+    padding: 1.7rem;
+}
+
+
+/* media queries */
+
+@media  (min-width: 768px) {
+    .testimonial__grid__section{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .grid__span__2 {
+        grid-column: span 2;
+
+    }
+
+    .testimonial {
+        grid-column-start: 4;
+        grid-row-start: 1;
+        grid-row-end: span 2;
+    }
+}
+
+
+
+
+
+
+
+
